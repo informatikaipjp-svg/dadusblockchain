@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Student Blockchain System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #102f55 0%, #071e3c 100%);
+            padding: 20px;
+        }
+
+        .login-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* LOGO STYLING */
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            border-radius: 50%;
+            background: #f0f6fc;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-card h2 {
+            color: #102f55;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .login-card p {
+            color: #647a96;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        /* FORM STYLING */
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #284568;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccdbea;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #17345f;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            border-color: #2587e8;
+            box-shadow: 0 0 0 3px rgba(37, 135, 232, 0.15);
+        }
+
+        /* BUTTON STYLING */
+        .btn-login {
+            width: 100%;
+            padding: 13px;
+            background: #147bd1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn-login:hover {
+            background: #0968b8;
+        }
+
+        /* FOOTER EXTRA */
+        .login-footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #8fa0b5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        
+        <!-- LOGO IMAGEN -->
+        <div class="logo-container">
+            <!-- Troka URL nee ho imi nia foto logo/file lokal (p.ex., "logo.png") -->
+            <img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png" alt="Logo Blockchain">
+        </div>
+
+        <h2>Student Blockchain</h2>
+        <p>Benvindu! Priense dadus atu tam sistema</p>
+
+        <!-- FORM LOGIN -->
+        <form action="main.html" method="GET">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    placeholder="Keta/Hatama Username" 
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Keta/Hatama Password" 
+                    required
+                >
+            </div>
+
+            <button type="submit" class="btn-login">
+                🔑 Tam (Login)
+            </button>
+        </form>
+
+        <div class="login-footer">
+            Student Blockchain System &copy; 2026
+        </div>
+
+    </div>
+
+</body>
+</html>
